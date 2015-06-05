@@ -1,0 +1,14 @@
+﻿Build started 6/5/2015 1:53:31 PM.
+     1>Project "C:\Users\Craig Phillips\Documents\Visual Studio 2013\Projects\PowerPi\PowerPi\PowerPi.vcxproj" on node 2 (Build target(s)).
+     1>Build:
+         "C:\Program Files (x86)\Sysprogs\VisualGDB\\VisualGDB.exe" /build "C:\Users\Craig Phillips\Documents\Visual Studio 2013\Projects\PowerPi\PowerPi\PowerPi.vcxproj" "/solution:C:\Users\Craig Phillips\Documents\Visual Studio 2013\Projects\PowerPi\PowerPi.sln" "/config:Debug" "/platform:Win32"
+     1>VisualGDB : warning : Found a source file with spaces in the path: "C:\Users\Craig Phillips\Documents\Visual Studio 2013\Projects\PowerPi\PowerPi\PowerPi.cpp". If the build fails, please rename/move it.
+         VisualGDB: Sending 6 updated source files to build machine...
+         VisualGDB: Run "make CONFIG=Debug" in directory "/tmp/VisualGDB/c/Users/Craig Phillips/Documents/Visual Studio 2013/Projects/PowerPi/PowerPi" on pi@192.168.0.23 (SSH)
+         g++ -ggdb -ffunction-sections -O0   -DDEBUG  -c PowerPi.cpp -o Debug/PowerPi.o -MD -MF Debug/PowerPi.dep
+         g++ -o Debug/PowerPi -Wl,-gc-sections   -L/usr/local/lib -Wl,--start-group Debug/PowerPi.o -lrtlsdr -lcurl  -Wl,--rpath='$ORIGIN'   -Wl,--end-group
+     1>Done Building Project "C:\Users\Craig Phillips\Documents\Visual Studio 2013\Projects\PowerPi\PowerPi\PowerPi.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.10
